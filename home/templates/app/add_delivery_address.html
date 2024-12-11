@@ -1,0 +1,19 @@
+
+
+{% comment %} {% extends 'app/base.html' %} {% endcomment %}
+{% load static %}
+{% block title %}Customer Registration{% endblock title %}
+
+{% load static %}
+{% block additional_head %}
+<link rel="stylesheet" href="{% static 'app/css/delivery.css' %}">
+{% endblock %}
+{% block main-content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Address</button>
+</form>  
+
+    {% endblock main-content %}

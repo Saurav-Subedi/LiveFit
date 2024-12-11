@@ -1,0 +1,124 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  line-height: 3;
+  
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #dcdfe8;
+  font-display: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+
+
+/* Main Content Styles */
+#main-content {
+  margin-top: 20px;
+  margin-top: 4cm;
+}
+
+/* Product Image Styles */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  /* Add other styles as needed */
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+  /* margin-top: 1cm; */
+}
+
+.cart-container > div {
+  width: 48%; /* Adjust the width of each column */
+  margin-bottom: 20px;
+  /* margin-top: 1cm; */
+}
+
+.cart-items {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  border: 1px solid #279247;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #fff;
+}
+
+.remove-item {
+  text-align: center;
+}
+
+.remove-button {
+  background-color: #ff6464;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Total Amount Section Styles */
+#total-amount-section {
+  width: 100%;
+}
+
+.card {
+  background-color: #dce9e2;
+  border: 1px solid #100909;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.card h3 {
+  color: #279247;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #13e716;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .cart-container > div {
+      width: 100%; /* Make each column take full width on smaller screens */
+  }
+}
